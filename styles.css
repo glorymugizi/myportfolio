@@ -4,16 +4,7 @@
   box-sizing: border-box;
 }
 
-header {
-  background-image: url(./images/header-shapes\ mobile.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-position-y: 15px;
-  border-bottom-left-radius: 100px;
-}
-
-.tool-bar {
+.navbar {
   display: flex;
   justify-content: space-between;
   margin: 1.5rem;
@@ -32,14 +23,26 @@ header {
   font-weight: 700;
 }
 
+.my-logo a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
 .toggle-menu {
   margin-right: 2.188rem;
+  cursor: pointer;
 }
 
 .headline {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-image: url(images/header-shapes\ mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 15px;
+  border-bottom-left-radius: 100px;
 }
 
 .container {
@@ -52,10 +55,12 @@ header {
 
 .container h1 {
   font-style: normal;
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: bolder;
+  font-size: 2rem;
   padding-top: 1.875rem;
   margin-bottom: 0;
+  color: #172b4d;
+  font-family: "poppins", Courier, monospace;
 }
 
 .heading {
@@ -79,7 +84,7 @@ ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  width: 70%;
+  width: 50%;
 }
 
 .lets-connect {
