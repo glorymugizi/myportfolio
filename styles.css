@@ -2,12 +2,59 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
-/* Mobile Styles */
+.tool-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-logo {
+  color: #6070ff;
+}
+.toggle-menu {
+  margin-right: 2rem;
+}
+.headline {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url("myportfolio/images/Header bg@2x.png");
+}
+.container {
+  display: flex;
+}
+.container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+.heading {
+  margin: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.container p {
+  color: #344563;
+  margin: 1.5rem;
+  padding: 1.8rem;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+/* Mobile Styles
 @media only screen and (max-width: 400px) {
   body {
-    background-color: #ce161c; /* Red */
+    background-color: #ce161c; /* Red 
   }
-}
+} */
