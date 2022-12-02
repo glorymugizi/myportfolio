@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 1.5rem;
+  font-family: "poppins", Courier, monospace;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem;
   list-style: none;
+  margin-top: 2rem;
 }
 
 .logo {
@@ -20,17 +25,25 @@
 
 .my-logo {
   color: #6070ff;
-  font-weight: 700;
 }
 
 .my-logo a {
   text-decoration: none;
   color: #6070ff;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .toggle-menu {
-  margin-right: 2.188rem;
+  margin-right: 0.188rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-menu img {
+  width: 1.5rem;
 }
 
 .headline {
@@ -42,12 +55,11 @@
   background-position: center;
   background-size: cover;
   background-position-y: 15px;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 40px;
 }
 
 .container {
   display: flex;
-  padding: 1.5rem;
   flex-wrap: wrap;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -56,9 +68,8 @@
 .container h1 {
   font-style: normal;
   font-weight: bolder;
-  font-size: 2rem;
-  padding-top: 1.875rem;
-  margin-bottom: 0;
+  font-size: 3rem;
+  padding-top: 7.5rem;
   color: #172b4d;
   font-family: "poppins", Courier, monospace;
 }
@@ -71,8 +82,7 @@
 
 .container p {
   color: #344563;
-  font-size: 1.1rem;
-  margin-top: 0;
+  font-size: 1.5rem;
 }
 
 ul {
@@ -85,13 +95,20 @@ ul {
   list-style: none;
   justify-content: space-between;
   width: 50%;
+  margin-right: 70px;
+  margin-top: 0.8rem;
+  padding-bottom: 2rem;
 }
 
 .lets-connect {
   text-decoration: none;
   color: #7f8cff;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 500;
+}
+
+.lets-connect a {
+  text-decoration: none;
+  color: #6070ff;
 }
