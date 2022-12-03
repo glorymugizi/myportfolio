@@ -58,6 +58,7 @@ body {
   background-size: cover;
   background-position-y: 15px;
   border-bottom-left-radius: 100px;
+  margin-bottom: 20px;
 }
 
 main {
@@ -127,6 +128,10 @@ ul {
 .lets-connect a {
   text-decoration: none;
   color: #6070ff;
+}
+
+.works-section {
+  padding-top: 50px;
 }
 
 .grid-container {
