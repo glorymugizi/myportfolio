@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'poppins', Courier, monospace;
+  font-family: "poppins", Courier, monospace;
 }
 
 /* header section */
@@ -26,7 +26,7 @@ body {
   color: #6070ff;
   font-size: 40px;
   font-weight: 900;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .my-logo a {
@@ -75,7 +75,7 @@ main {
   font-size: 40px;
   padding-top: 7.5rem;
   color: #172b4d;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .heading {
@@ -86,11 +86,11 @@ main {
 .p {
   color: #344563;
   font-size: 16px;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -118,7 +118,7 @@ ul {
   text-decoration: none;
   color: #7f8cff;
   margin-top: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -186,7 +186,7 @@ button {
 }
 
 .paragraph {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -230,7 +230,7 @@ button {
 
 .list {
   padding: 20px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -242,7 +242,7 @@ button {
   padding: 20px 0;
 
   /* border-bottom: 1px solid #dfe1e6; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -286,7 +286,7 @@ button {
 .union {
   display: flex;
   justify-content: space-around;
-  width: 90%;
+  width: 95%;
 }
 
 .list .union {
@@ -316,21 +316,57 @@ button:active {
 }
 
 /* contact form */
-.contact-form {
+footer {
+  border: 1px solid red;
+  display: flex;
+  border-top-left-radius: 100px;
+  /* background-image: url(/images/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 15px;
+  margin-bottom: 20px;*/
   background: #6070ff;
-  position: relative;
-  display: grid;
-  place-items: center;
-  z-index: -1;
 }
-
-.contact-form::before {
-  content: '';
-  height: 100%;
+.contact-container {
   width: 100%;
-  background-color: url('./images/contact\ form\ shapes-mobile@2x.png');
-  position: absolute;
-  left: 0;
-  top: 0%;
-  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-image: url(/images/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 15px;
+}
+.contact-container h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+input,
+textarea {
+  background: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 150px;
+}
+.footer-paragraph {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  text-align: center;
 }
