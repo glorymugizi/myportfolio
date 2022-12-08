@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 body {
@@ -46,6 +47,10 @@ body {
 
 .toggle-menu img {
   width: 1.5rem;
+}
+
+.nav-list {
+  display: none;
 }
 
 .headline {
@@ -414,4 +419,60 @@ form {
   align-self: center;
   padding-top: 1.875rem;
   padding-bottom: 0;
+}
+
+/* Desktop version */
+@media only screen and (min-width: 961px) {
+  body {
+    background: #e5e5e5;
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+
+  header {
+    background-color: #fff;
+  }
+
+  .nav-list {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .headline {
+    background-color: #fff;
+    background-image: url(#);
+  }
+
+  .heading,
+  .paragraph-one {
+    padding-left: 16.25rem;
+    margin-left: 0;
+    padding-right: 16.25rem;
+  }
+
+  .lets-connect a {
+    font-size: 16px;
+  }
+
+  .social-media-links {
+    width: 140px;
+    margin-left: 16.25rem;
+  }
+
+  .social-media-links img {
+    width: 14px;
+    height: 15px;
+  }
 }
