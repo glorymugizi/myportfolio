@@ -129,6 +129,7 @@ ul {
   text-decoration: none;
   color: #6070ff;
 }
+
 /* works section */
 
 .works-section {
@@ -318,60 +319,99 @@ button:active {
 
 /* contact form */
 footer {
-  border: 1px solid red;
   display: flex;
-  border-top-left-radius: 100px;
+  border-top-left-radius: 4.25rem;
   background: #6070ff;
-  margin-top: 80px;
-}
-.contact-container {
+  margin-top: 5rem;
   width: 100%;
-  height: 100%;
-  padding-top: 150px;
-  padding-bottom: 60px;
-  background-image: url(/images/contact\ form\ shapes-mobile@2x.png);
+  height: 49.688rem;
+  flex-direction: column;
+  padding: 2.5rem 0;
+  margin-bottom: 0;
+  background-image: url(./images/contact\ form\ shapes-mobile@2x.png);
+  background-size: 13.3rem;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-position-y: 70px;
+  background-position: right;
 }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .contact-container h2 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
-  line-height: 52px;
+  font-size: 2.188rem;
+  line-height: 3.25rem;
   text-align: center;
-  color: #ffffff;
-  padding-top: 60px;
+  color: #fff;
+  padding-top: 5.5rem;
 }
+
 input,
 textarea {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   width: 100%;
-  font-family: "Poppins";
+}
+
+input {
+  height: 3rem;
+  font-size: 1.063rem;
+  line-height: 1.25rem;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
+  padding: 0.938rem 1rem;
 }
-input {
-  height: 48px;
-  font-size: 17px;
-  line-height: 20px;
-  /* color: #172b4d; */
-}
+
 textarea {
   height: 10.6rem;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0.938rem 1rem;
   color: #b3bac5;
 }
+
 .footer-paragraph {
-  line-height: 28px;
+  line-height: 1.75rem;
   text-align: center;
   color: #ebebff;
+  padding-bottom: 2.8rem;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-elements {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.footer-btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #6070ff;
+}
+
+.footer-button {
+  width: 8.75rem;
+}
+
+.home-indicator {
+  width: 40%;
+  align-self: center;
+  padding-top: 1.875rem;
+  padding-bottom: 0;
 }
