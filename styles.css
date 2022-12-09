@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'poppins', Courier, monospace;
+  font-family: "poppins", Courier, monospace;
 }
 
 /* header section */
@@ -28,7 +28,7 @@ body {
   color: #6070ff;
   font-size: 40px;
   font-weight: 900;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .my-logo a {
@@ -81,7 +81,7 @@ main {
   font-size: 40px;
   padding-top: 7.5rem;
   color: #172b4d;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 .heading {
@@ -92,11 +92,11 @@ main {
 .p {
   color: #344563;
   font-size: 16px;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -124,7 +124,7 @@ ul {
   text-decoration: none;
   color: #7f8cff;
   margin-top: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -199,7 +199,7 @@ button {
 }
 
 .paragraph {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -243,7 +243,7 @@ button {
 
 .list {
   padding: 20px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -255,7 +255,7 @@ button {
   padding: 20px 0;
 
   /* border-bottom: 1px solid #dfe1e6; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -353,7 +353,7 @@ footer {
 }
 
 .contact-container h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.188rem;
@@ -376,7 +376,7 @@ input {
   font-size: 1.063rem;
   line-height: 1.25rem;
   color: #172b4d;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   padding: 0.938rem 1rem;
@@ -386,7 +386,7 @@ textarea {
   height: 10.6rem;
   font-size: 0.938rem;
   line-height: 1.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   padding: 0.938rem 1rem;
@@ -459,7 +459,13 @@ form {
 
   .headline {
     background-color: #fff;
-    background-image: url(#);
+    background-image: url(./images/desktop/Header-bg-desktop.svg);
+    background-repeat: no-repeat;
+
+    /* background-position: center; */
+    background-size: 55rem;
+    background-position-y: 15px;
+    border-bottom-left-radius: 100px;
   }
 
   .heading,
@@ -580,5 +586,20 @@ form {
   .langauges-list {
     display: flex;
     flex-direction: row;
+  }
+
+  .sublist {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  /* contact form */
+  footer {
+    background-image: url(./images/desktop/contact-form-background-shapes.svg);
+    background-size: 55rem;
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }
