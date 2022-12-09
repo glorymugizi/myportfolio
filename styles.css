@@ -426,6 +426,7 @@ form {
 @media only screen and (min-width: 961px) {
   body {
     background: #e5e5e5;
+    width: 100vw;
   }
 
   .toggle-menu {
@@ -542,7 +543,37 @@ form {
   /* About myself section */
   #about-myself {
     display: flex;
+    border: 1px red solid;
+    padding: 0;
 
     /* flex-direction: row; */
+  }
+
+  #about-myself .heading {
+    border: 1px solid green;
+  }
+
+  #about-myself .heading,
+  .paragraph-one {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-details {
+    width: 40%;
+    border: 1px solid blue;
+  }
+
+  .about-details .paragraph-one p {
+    width: 100%;
+  }
+
+  .list-container {
+    width: 60%;
+  }
+
+  .langauges-list {
+    display: flex;
+    flex-direction: row;
   }
 }
