@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* border: 1px solid red; */
 }
 
 body {
@@ -29,6 +31,10 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .my-logo a {
   text-decoration: none;
   color: #6070ff;
@@ -46,6 +52,10 @@ body {
 
 .toggle-menu img {
   width: 1.5rem;
+}
+
+.nav-list {
+  display: none;
 }
 
 .headline {
@@ -155,6 +165,12 @@ ul {
 
 .project img {
   width: 100%;
+  height: 100%;
+}
+
+.project img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
 }
 
 .language {
@@ -414,4 +430,276 @@ form {
   align-self: center;
   padding-top: 1.875rem;
   padding-bottom: 0;
+}
+
+/* Desktop version */
+@media only screen and (min-width: 961px) {
+  body {
+    background: #e5e5e5;
+    width: 100vw;
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+
+  header {
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .navbar {
+    padding-top: 0.8rem;
+    padding-left: 9.688rem;
+    padding-right: 9.688rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .my-logo {
+    width: 280px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav-list {
+    display: flex;
+    width: 18.5rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .nav-list a {
+    color: #344563;
+  }
+
+  .headline {
+    background-color: #fff;
+    background-image: url(./images/desktop/Header-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 73rem;
+    background-position-y: 15px;
+    border-bottom-left-radius: 100px;
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+  }
+
+  .heading,
+  .paragraph-one {
+    padding-left: 16.25rem;
+    margin-left: 0;
+    padding-right: 16.25rem;
+  }
+
+  .heading-one {
+    padding-top: 5.438rem;
+  }
+
+  .head-paragraph,
+  .header-connect {
+    padding-left: 7.5rem;
+  }
+
+  .lets-connect a {
+    font-size: 16px;
+  }
+
+  .header-socios {
+    padding-left: 7.5rem;
+  }
+
+  .social-media-links {
+    width: 8.75rem;
+    margin-left: 8.875rem;
+  }
+
+  .social-media-links img {
+    width: 0.875rem;
+    height: 0.938rem;
+  }
+
+  /* desktop version works section */
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e5e5e5;
+    margin-bottom: 20px;
+  }
+
+  #portfolio {
+    margin-left: 20px;
+  }
+
+  .grid-item {
+    display: flex;
+    width: 65.5rem;
+    height: 31rem;
+    justify-content: space-between;
+    padding: 1.25rem;
+  }
+
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    padding: 2.313rem;
+    width: 55%;
+  }
+
+  .project {
+    width: 45%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .second-project {
+    order: 2;
+  }
+
+  .fouth-project {
+    order: 2;
+  }
+
+  .project img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame {
+    display: flex;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 16px;
+    justify-content: flex-end;
+    width: 270px;
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  .frame h5 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+    padding-right: 40px;
+  }
+
+  .frame ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 180px;
+    margin: 0;
+    padding-right: 20px;
+  }
+
+  .frame li {
+    /* padding-left: 10px; */
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    color: #6b778c;
+
+    /* padding-right: 8px; */
+  }
+
+  /* About myself section */
+  #about-myself {
+    display: flex;
+    padding: 0;
+    border-top-right-radius: 100px;
+  }
+
+  #about-myself .heading,
+  .paragraph-one {
+    padding-left: 8.875rem;
+    padding-right: 0;
+  }
+
+  #about-myself .btn {
+    padding-left: 8.875rem;
+    padding-bottom: 15rem;
+  }
+
+  .container h1 {
+    padding-top: 8.875rem;
+    color: #172b4d;
+  }
+
+  .about-details {
+    width: 44%;
+  }
+
+  .about-details .paragraph-one p {
+    width: 100%;
+  }
+
+  .list-container {
+    width: 56%;
+    padding-top: 10.375rem;
+  }
+
+  .langauges-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sublist {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  /* contact form */
+  footer {
+    background-image: url(./images/desktop/contact-form-background-shapes.svg);
+    background-size: 75rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10rem;
+    width: 100vw;
+
+    /* height: 646px; */
+  }
+
+  .footer-paragraph {
+    line-height: 1.75rem;
+    text-align: center;
+    color: #ebebff;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+
+    /* justify-content: center; */
+  }
+
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-indicator {
+    display: none;
+  }
 }
