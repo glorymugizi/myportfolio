@@ -13,9 +13,9 @@
         <div class="navbar">
           <div class="my-logo"><a href="#">My Logo</a></div>
           <ul class="nav-list">
-            <li>Portoflio</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about-myself">About</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
           <div class="toggle-menu">
             <img src="images/humbger.png" alt="toggle menu" />
@@ -58,12 +58,15 @@
       </ul>
     </section>
     <main>
-      <section class="grid-container works-section container">
+      <section class="grid-container works-section container" id="portfolio">
         <div>
           <div class="grid-item">
             <div class="card">
               <div class="project">
-                <img src="images/first-project.png" alt="my first project" />
+                <img
+                  src="./images/desktop/portfolio-one.png"
+                  alt="my first project"
+                />
               </div>
               <div class="card-description">
                 <h2 class="project-title">Tonic</h2>
@@ -94,25 +97,30 @@
         <div>
           <div class="grid-item">
             <div class="card">
-              <div class="project">
-                <img src="images/second-project.png" alt="my second project" />
+              <div class="project second-project">
+                <img
+                  src="images/desktop/Portfolio-two.png"
+                  alt="my second project"
+                />
               </div>
               <div class="card-description">
-                <h2 class="project-title">Tonic</h2>
+                <h2 class="project-title">Multi-Post Stories</h2>
                 <div class="frame">
-                  <h5>CANOPY</h5>
+                  <h5>FACEBOOK</h5>
                   <ul>
-                    <li>Back End Dev</li>
+                    <li>Full Stack Dev</li>
                     <li>2015</li>
                   </ul>
                 </div>
                 <p class="paragraph">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
+                  Experimental content creation feature that allows users to add
+                  to an existing story over the course of a day without spamming
+                  their friends.
                 </p>
                 <div class="languages">
                   <ul class="language">
                     <li>html</li>
+                    <li>Ruby on rails</li>
                     <li>css</li>
                     <li>javascript</li>
                   </ul>
@@ -126,24 +134,29 @@
           <div class="grid-item">
             <div class="card">
               <div class="project">
-                <img src="images/third-project.png" alt="my third project" />
+                <img
+                  src="images/desktop/Portfolio-three.png"
+                  alt="my third project"
+                />
               </div>
               <div class="card-description">
-                <h2 class="project-title">Tonic</h2>
+                <h2 class="project-title">Facebook 360</h2>
                 <div class="frame">
-                  <h5>CANOPY</h5>
+                  <h5>FACEBOOK</h5>
                   <ul>
-                    <li>Back End Dev</li>
+                    <li>Full Stack Dev</li>
                     <li>2015</li>
                   </ul>
                 </div>
                 <p class="paragraph">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
+                  Exploring the future of media in Facebook's first Virtual
+                  Reality app; a place to discover and enjoy 360 photos and
+                  videos on Gear VR.
                 </p>
                 <div class="languages">
                   <ul class="language">
                     <li>html</li>
+                    <li>Ruby on rails</li>
                     <li>css</li>
                     <li>javascript</li>
                   </ul>
@@ -156,15 +169,18 @@
         <div>
           <div class="grid-item">
             <div class="card">
-              <div class="project">
-                <img src="images/fouth-project.png" alt="my first project" />
+              <div class="project fouth-project">
+                <img
+                  src="images/desktop/Portfolio-four.png"
+                  alt="my fouth project"
+                />
               </div>
               <div class="card-description">
-                <h2 class="project-title">Tonic</h2>
+                <h2 class="project-title">Uber Navigation</h2>
                 <div class="frame">
-                  <h5>CANOPY</h5>
+                  <h5>Uber</h5>
                   <ul>
-                    <li>Back End Dev</li>
+                    <li>Lead Developer</li>
                     <li>2015</li>
                   </ul>
                 </div>
@@ -175,6 +191,7 @@
                 <div class="languages">
                   <ul class="language">
                     <li>html</li>
+                    <li>Ruby on rails</li>
                     <li>css</li>
                     <li>javascript</li>
                   </ul>
@@ -269,7 +286,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <!-- contact form -->
       <div class="contact-container">
         <form
