@@ -48,7 +48,7 @@ This page displays my Portfolio which showcases my works.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://glorymugizi.github.io/myportfolio/)
+- [Live Demo Link](https://glorymugizi.github.io/myportfolio)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
