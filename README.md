@@ -115,6 +115,10 @@ Simply run HTML file or open HTML file with web browser.
 
 - GitHub: [@glorymugizi](https://github.com/glorymugizi)
 
+👤 **Fauziyah Zeeyah**
+
+- GitHub: [@zeeyah](https://github.com/fauziyahzeeyah)
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[HTML]**
