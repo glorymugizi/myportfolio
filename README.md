@@ -13,6 +13,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Loom walkthrough](#presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -49,6 +50,10 @@ This page displays my Portfolio which showcases my works.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://glorymugizi.github.io/myportfolio/)
+
+## 🚀 Loom Presenation <a name="presentation"></a>
+
+- [Loom walkthrough](https://loom.com/share/17234ffef85c47f998265ebf3a32ef64)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
