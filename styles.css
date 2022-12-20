@@ -4,8 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* border: 1px solid red; */
 }
 
 body {
@@ -58,6 +56,53 @@ a {
   display: none;
 }
 
+.modal {
+  top: 10%;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  padding-top: 20px;
+}
+.modal ul {
+  padding-top: 15px;
+}
+.modal ul li {
+  padding: 8px 0;
+}
+.modal ul li a {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #6070ff;
+  opacity: 0.9;
+  z-index: 10;
+}
+.close-modal {
+  position: absolute;
+  top: -3.8rem;
+  right: 1.8rem;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: absolute;
+}
+/* end of overlay and it's content */
 .headline {
   display: flex;
   flex-direction: column;
