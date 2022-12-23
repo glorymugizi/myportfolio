@@ -211,10 +211,20 @@ h2 {
   height: 100%;
 }
 
-/* .project img:hover {
+.see-live-btn {
+  width: 115px;
+  font-size: 13px;
+  padding: 4px 2px;
+}
+
+.see-live-btn img {
+  width: 13px;
+}
+
+.project img:hover {
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
-} */
+}
 
 .language {
   display: flex;
@@ -523,7 +533,7 @@ form {
   padding: 10px 24px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 800px;
   margin: 0 auto;
 }
 
@@ -578,7 +588,7 @@ form {
 
 .modal-img {
   width: 100%;
-  max-height: 600px;
+  max-height: 512px;
 }
 
 /* Desktop version */
@@ -586,6 +596,10 @@ form {
   .modal-desc {
     display: flex;
     min-width: 100%;
+  }
+
+  .popup {
+    height: 120vh;
   }
 
   .modal-desc p {

@@ -40,6 +40,8 @@ let worksArray = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     img: "./images/desktop/portfolio-one.png",
+    detail:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ["html", "css", "javascript"],
     linkDemo: "https://glorymugizi.github.io/myportfolio/",
     sourceCode: "https://github.com/glorymugizi/myportfolio/tree/main",
@@ -49,6 +51,8 @@ let worksArray = [
     description:
       "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
     img: "./images/desktop/Portfolio-two.png",
+    detail:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ["html", "css", "javascript"],
     linkDemo: "https://glorymugizi.github.io/myportfolio/",
     sourceCode: "https://github.com/glorymugizi/myportfolio/tree/main",
@@ -58,6 +62,8 @@ let worksArray = [
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     img: "./images/desktop/Portfolio-three.png",
+    detail:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ["html", "css", "javascript"],
     linkDemo: "https://glorymugizi.github.io/myportfolio/",
     sourceCode: "https://github.com/glorymugizi/myportfolio/tree/main",
@@ -67,6 +73,8 @@ let worksArray = [
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required.",
     img: "./images/desktop/Portfolio-four.png",
+    detail:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ["html", "css", "javascript"],
     linkDemo: "https://glorymugizi.github.io/myportfolio/",
     sourceCode: "https://github.com/glorymugizi/myportfolio/tree/main",
@@ -76,7 +84,7 @@ let worksArray = [
 const projectsSection = document.querySelector("#portfolio");
 const modalSection = document.querySelector("#modal");
 worksArray.forEach((project) => {
-  const { name, description, img, technologies, linkDemo, sourceCode } =
+  const { name, description, img, detail, technologies, linkDemo, sourceCode } =
     project;
   projectsSection.innerHTML += `
   <div class="grid-item">
@@ -134,7 +142,7 @@ src=${img} class="modal-img"
 </div>
 <div class="modal-desc">
   <p class="paragraph">
-    ${description}
+    ${detail}
   </p>
   <div class="modal-desc-right">
     <div class="languages">
@@ -145,8 +153,8 @@ src=${img} class="modal-img"
       </ul>
     </div>
     <div class="btn">
-      <button>See live <img src="./images/popup/live.png" alt="project live link" /></button>
-      <button><span>See Source </span><img src="./images/popup/github.png" alt="github" /></button>
+      <button class="see-live-btn">See live <img src="./images/popup/live.png" alt="project live link" /></button>
+      <button class="see-live-btn"><span>See Source </span><img src="./images/popup/github.png" alt="github" /></button>
     </div>
   </div>
 </div>
