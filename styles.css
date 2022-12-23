@@ -193,6 +193,7 @@ h2 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+
   /* grid-auto-rows: 40rem; */
   gap: 12px;
   background-color: #f7f7f9;
@@ -493,20 +494,23 @@ form {
   padding-top: 1.875rem;
   padding-bottom: 0;
 }
+
 /* pop up window */
 
 .popup {
   flex-direction: column;
   padding: 0 1.5rem;
-  border: 1px solid #ff0000;
+  border: 1px solid red;
   position: absolute;
   width: 100vw;
   height: auto;
   display: none;
+
   /* width: 21.438rem;
   height: 44.563rem;
   margin: auto; */
 }
+
 .open-popup {
   display: flex;
 }
@@ -516,35 +520,40 @@ form {
   justify-content: space-between;
   align-items: center;
 }
+
 .popup .languages {
   border-bottom: 1px solid #ebecf0;
 }
+
 .popup ul {
   padding: 1rem 0;
 }
-.popup .popup-heading {
-  padding-top: 1.125rem;
-}
+
 .popup .close-popup {
   font-size: 30px;
   color: #67798e;
 }
+
 .popup .card-description {
   padding-bottom: 1.25rem;
 }
+
 .popup .frame {
   display: flex;
   width: 80%;
   align-items: center;
 }
+
 .popup .paragraph {
   padding-bottom: 1rem;
   padding-top: 0.75rem;
 }
+
 .popup .btn {
   padding-top: 1.563rem;
   padding-bottom: 1.25rem;
 }
+
 .popup .see-project-btn {
   width: 9.375rem;
   height: 3rem;
