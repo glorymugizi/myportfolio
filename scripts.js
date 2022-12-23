@@ -110,6 +110,7 @@ worksArray.forEach((project) => {
                 </div>
               </div>
             </div>
+            <div class = "popup-container">
             <div class="popup">
 <div class="popup-heading"><h2 class="project-title"><h2>${name}</h2>
 <div><span class="close-popup">&times;</span></div>
@@ -145,9 +146,9 @@ src=${img}
   </div>
 </div>
 </div>
-          </div>`;
+</div></div>`;
 });
-const popups = document.querySelectorAll(".popup");
+const popups = document.querySelectorAll(".popup-container");
 const seeProjectBtns = document.querySelectorAll(".see-project-btn");
 const closePopupBtn = document.querySelectorAll(".close-popup");
 
