@@ -31,3 +31,4 @@ window.addEventListener("resize", () => {
   }
 });
 overlay.addEventListener("click", closeMobileMenu);
+// works section and pop up window.

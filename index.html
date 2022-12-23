@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="container">
         <div class="navbar">
           <div class="my-logo"><a href="#">My Logo</a></div>
@@ -30,13 +30,6 @@
             <li class="mobile-links"><a href="#about-myself">About</a></li>
             <li class="mobile-links"><a href="#contact">Contact</a></li>
           </ul>
-          <div class="overlay-home-indicator">
-            <img
-              src="./images/home-indicator.png"
-              alt="home-indicator"
-              class="home-indicator"
-            />
-          </div>
         </div>
       </div>
     </header>
@@ -75,150 +68,10 @@
       </div>
     </section>
     <main>
-      <section class="grid-container works-section container" id="portfolio">
-        <div>
-          <div class="grid-item">
-            <div class="card">
-              <div class="project">
-                <img
-                  src="./images/desktop/portfolio-one.png"
-                  alt="image showing my first web development project created with html css and javascript"
-                />
-              </div>
-              <div class="card-description">
-                <h2 class="project-title">Tonic</h2>
-                <div class="frame">
-                  <h5>CANOPY</h5>
-                  <ul>
-                    <li>Back End Dev</li>
-                    <li>2015</li>
-                  </ul>
-                </div>
-
-                <p class="paragraph">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <div class="languages">
-                  <ul class="language">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                </div>
-                <div class="btn"><button>See Project</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="grid-item">
-            <div class="card">
-              <div class="project second-project">
-                <img
-                  src="images/desktop/Portfolio-two.png"
-                  alt="image showing my second web development project created with html css and javascript"
-                />
-              </div>
-              <div class="card-description">
-                <h2 class="project-title">Multi-Post Stories</h2>
-                <div class="frame">
-                  <h5>FACEBOOK</h5>
-                  <ul>
-                    <li>Full Stack Dev</li>
-                    <li>2015</li>
-                  </ul>
-                </div>
-                <p class="paragraph">
-                  Experimental content creation feature that allows users to add
-                  to an existing story over the course of a day without spamming
-                  their friends.
-                </p>
-                <div class="languages">
-                  <ul class="language">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                </div>
-                <div class="btn"><button>See Project</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="grid-item">
-            <div class="card">
-              <div class="project">
-                <img
-                  src="images/desktop/Portfolio-three.png"
-                  alt="image showing my third web development project created with html css and javascript"
-                />
-              </div>
-              <div class="card-description">
-                <h2 class="project-title">Facebook 360</h2>
-                <div class="frame">
-                  <h5>FACEBOOK</h5>
-                  <ul>
-                    <li>Full Stack Dev</li>
-                    <li>2015</li>
-                  </ul>
-                </div>
-                <p class="paragraph">
-                  Exploring the future of media in Facebook's first Virtual
-                  Reality app; a place to discover and enjoy 360 photos and
-                  videos on Gear VR.
-                </p>
-                <div class="languages">
-                  <ul class="language">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                </div>
-                <div class="btn"><button>See Project</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="grid-item">
-            <div class="card">
-              <div class="project fouth-project">
-                <img
-                  src="images/desktop/Portfolio-four.png"
-                  alt="image showing my fourth web development project created with html css and javascript"
-                />
-              </div>
-              <div class="card-description">
-                <h2 class="project-title">Uber Navigation</h2>
-                <div class="frame">
-                  <h5>Uber</h5>
-                  <ul>
-                    <li>Lead Developer</li>
-                    <li>2018</li>
-                  </ul>
-                </div>
-                <p class="paragraph">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <div class="languages">
-                  <ul class="language">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                </div>
-                <div class="btn"><button>See Project</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section
+        class="grid-container works-section container"
+        id="portfolio"
+      ></section>
       <!-- About my self section -->
       <section id="about-myself">
         <div class="container about-details">
@@ -366,5 +219,6 @@
       </div>
     </footer>
     <script src="./scripts.js"></script>
+    <script src="./portfolio.js"></script>
   </body>
 </html>
