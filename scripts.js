@@ -147,3 +147,19 @@ src=${img}
 </div>
           </div>`;
 });
+const popups = document.querySelectorAll(".popup");
+const seeProjectBtns = document.querySelectorAll(".see-project-btn");
+const closePopupBtn = document.querySelectorAll(".close-popup");
+
+seeProjectBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    popups[index].classList.add("open-popup");
+    console.log(`clicked btn`);
+  });
+});
+
+closePopupBtn.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    popups[index].classList.remove("open-popup");
+  });
+});
