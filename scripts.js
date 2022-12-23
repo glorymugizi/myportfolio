@@ -74,6 +74,7 @@ let worksArray = [
 ];
 // project cards or works
 const projectsSection = document.querySelector("#portfolio");
+const modalSection = document.querySelector("#modal");
 worksArray.forEach((project) => {
   const { name, description, img, technologies, linkDemo, sourceCode } =
     project;
@@ -109,41 +110,46 @@ worksArray.forEach((project) => {
                   <button class="see-project-btn">See Project</button>
                 </div>
               </div>
-            </div>
-            <div class = "popup-container">
-            <div class="popup">
-<div class="popup-heading"><h2 class="project-title"><h2>${name}</h2>
+            </div>`;
+  modalSection.innerHTML += `
+<div class="popup-container">
+<div class="modal-blur"></div>
+<div class="popup">
+<div class="popup-heading"><h2 class="project-title">${name}<h2>
 <div><span class="close-popup">&times;</span></div>
 </div>
 
-<div class="card-description">
-  <div class="frame">
+<div class="">
+<div class="frame">
     <h5>CANOPY</h5>
     <ul>
       <li>Back End Dev</li>
       <li>2015</li>
     </ul>
-  </div>
-<div class="project">
+</div>
+<div class="">
 <img
-src=${img}
+src=${img} class="modal-img"
 />
 </div>
-
+<div class="modal-desc">
   <p class="paragraph">
     ${description}
   </p>
-  <div class="languages">
-    <ul class="language">
-      <li>${technologies[0]}</li>
-      <li>${technologies[1]}</li>
-      <li>${technologies[2]}</li>
-    </ul>
+  <div class="modal-desc-right">
+    <div class="languages">
+      <ul class="language">
+        <li>${technologies[0]}</li>
+        <li>${technologies[1]}</li>
+        <li>${technologies[2]}</li>
+      </ul>
+    </div>
+    <div class="btn">
+      <button>See live <img src="./images/popup/live.png" alt="project live link" /></button>
+      <button><span>See Source </span><img src="./images/popup/github.png" alt="github" /></button>
+    </div>
   </div>
-  <div class="btn">
-    <button>See live <img src="./images/popup/live.png" alt="project live link" /></button>
-    <button><span>See Source </span><img src="./images/popup/github.png" alt="github" /></button>
-  </div>
+</div>
 </div>
 </div>
 </div></div>`;
