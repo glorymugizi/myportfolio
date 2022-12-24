@@ -211,23 +211,24 @@ form.addEventListener("submit", (event) => {
   checkLowerCase(email);
 });
 // local storage
-const valueInput = JSON.parse(localStorage.getItem("valueInput")) || [];
 
-function addVale(n, e, t) {
-  valueInput.push({ n, e, t });
-  localStorage.setItem("valueInput", JSON.stringify(valueInput));
-  return { n, e, t };
+const fullName = document.getElementById('name');
+const message = document.getElementById('message');
+const email1 = document.getElementById('email')
+
+function addFormData() {
+  const formDetails = document.getElementById('main-form');
+  const contactFormData = new FormData(formDetails);
+  const contactFormObject = Object.fromEntries(contactFormData.entries());
+  localStorage.setItem('form', JSON.stringify(contactFormObject));
 }
 
-function showNow({ n, e, t }) {
-  namee.value = n;
-  email.value = e;
-  text.value = t;
-}
+email1.addEventListener('keydown', addFormData);
+fullName.addEventListener('keydown', addFormData);
+message.addEventListener('keydown', addFormData);
 
-valueInput.forEach(showNow);
+const storedData = JSON.parse(localStorage.getItem('form') ?? '{}');
 
-form.addEventListener("change", (event) => {
-  event.preventDefault();
-  addVale(namee.value, email.value, text.value);
-});
+fullName.value = storedData.name ?? '';
+email1.value = storedData.email ?? '';
+message.value = storedData.message ?? '';
