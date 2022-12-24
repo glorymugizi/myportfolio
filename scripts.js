@@ -220,7 +220,6 @@ function addFormData() {
   const formDetails = document.getElementById('main-form');
   const contactFormData = new FormData(formDetails);
   const contactFormObject = Object.fromEntries(contactFormData.entries());
-  console.log(contactFormObject);
   localStorage.setItem('form', JSON.stringify(contactFormObject));
 }
 
