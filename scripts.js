@@ -220,15 +220,17 @@ function addFormData() {
   const formDetails = document.getElementById('main-form');
   const contactFormData = new FormData(formDetails);
   const contactFormObject = Object.fromEntries(contactFormData.entries());
+  console.log(contactFormObject);
   localStorage.setItem('form', JSON.stringify(contactFormObject));
 }
 
-email1.addEventListener('keydown', addFormData);
-fullName.addEventListener('keydown', addFormData);
-message.addEventListener('keydown', addFormData);
+const storedData = JSON.parse(localStorage.getItem('form') || '{}');
 
-const storedData = JSON.parse(localStorage.getItem('form') ?? '{}');
+email1.addEventListener('input', addFormData);
+fullName.addEventListener('input', addFormData);
+message.addEventListener('input', addFormData);
 
-fullName.value = storedData.name ?? '';
-email1.value = storedData.email ?? '';
-message.value = storedData.message ?? '';
+
+fullName.value = storedData.name || '';
+email1.value = storedData.email || '';
+message.value = storedData.message  || '';
