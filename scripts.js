@@ -24,7 +24,7 @@ for (let i = 0; i < mobileLinks.length; i++) {
   mobileLinks[i].addEventListener("click", closeMobileMenu);
 }
 toggleMenu.addEventListener("click", mobileMenu);
-closeModal.addEventListener("click", closeMobileMenu);
+closeModals.addEventListener("click", closeMobileMenu);
 window.addEventListener("resize", () => {
   if (window.innerHeight >= 768) {
     overlay.classList.add("hidden");
