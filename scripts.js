@@ -6,6 +6,8 @@ const closeModal = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
 const mobileLinks = document.querySelectorAll(".mobile-links");
 const body = document.querySelector("body");
+const namee = document.querySelector('input[type="text"]');
+const text = document.querySelector("textarea");
 
 // function that opens the mobile menu
 const mobileMenu = function () {
@@ -207,4 +209,25 @@ function checkLowerCase(input) {
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   checkLowerCase(email);
+});
+// local storage
+const valueInput = JSON.parse(localStorage.getItem("valueInput")) || [];
+
+function addVale(n, e, t) {
+  valueInput.push({ n, e, t });
+  localStorage.setItem("valueInput", JSON.stringify(valueInput));
+  return { n, e, t };
+}
+
+function showNow({ n, e, t }) {
+  namee.value = n;
+  email.value = e;
+  text.value = t;
+}
+
+valueInput.forEach(showNow);
+
+form.addEventListener("change", (event) => {
+  event.preventDefault();
+  addVale(namee.value, email.value, text.value);
 });
