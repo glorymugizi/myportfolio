@@ -6,6 +6,8 @@ const closeModal = document.querySelector(".close-modal");
 const overlay = document.querySelector(".overlay");
 const mobileLinks = document.querySelectorAll(".mobile-links");
 const body = document.querySelector("body");
+const namee = document.querySelector('input[type="text"]');
+const text = document.querySelector("textarea");
 
 // function that opens the mobile menu
 const mobileMenu = function () {
@@ -208,3 +210,26 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   checkLowerCase(email);
 });
+// local storage
+
+const fullName = document.getElementById('name');
+const message = document.getElementById('message');
+const email1 = document.getElementById('email')
+
+function addFormData() {
+  const formDetails = document.getElementById('main-form');
+  const contactFormData = new FormData(formDetails);
+  const contactFormObject = Object.fromEntries(contactFormData.entries());
+  localStorage.setItem('form', JSON.stringify(contactFormObject));
+}
+
+const storedData = JSON.parse(localStorage.getItem('form') || '{}');
+
+email1.addEventListener('input', addFormData);
+fullName.addEventListener('input', addFormData);
+message.addEventListener('input', addFormData);
+
+
+fullName.value = storedData.name || '';
+email1.value = storedData.email || '';
+message.value = storedData.message  || '';
